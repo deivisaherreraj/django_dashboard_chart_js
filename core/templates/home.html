@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  <div id="container" style="width: 60%;">
+    <!--canvas id="population-chart" data-url="{% url 'population-chart' %}"></canvas-->
+    <div id="chart" style="" data-url="{% url 'population-chart' %}"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+  <script>
+
+    let div = document.getElementById('chart');
+
+    $(function () {
+      var $populationChart = $("#chart");
+      $.ajax({
+        url: $populationChart.data("url"),
+        success: function (data) {
+          console.log(data.lstChart)
+
+          const h3 = document.createElement("h3")
+            h3.textContent = data.lstChart[0].title;
+            div.appendChild(h3);
+
+          for(let i=0; i < data.lstChart.length; i++){
+            const p = document.createElement("p");
+            p.textContent = data.lstChart[i].description
+            div.appendChild(p);
+            const canvas = document.createElement("canvas");
+            canvas.id = i
+            let ctx = canvas.getContext("2d");
+            new Chart(ctx, data.lstChart[i].chart);
+            div.appendChild(canvas)
+          }
+
+          //const canvas = document.createElement("canvas");
+         // canvas.id = "example"
+          
+         // var ctx = canvas.getContext("2d");
+          //console.log(ctx)
+          //var ctx = $populationChart[0].getContext("2d");
+          //div.appendChild(canvas)
+          //new Chart(ctx, data);
+
+        }
+      });
+
+    });
+
+  </script>
+
+{% endblock %}

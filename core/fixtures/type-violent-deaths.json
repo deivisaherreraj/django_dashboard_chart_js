@@ -1,0 +1,30 @@
+[
+   {
+      "model":"core.typeviolentdeaths",
+      "fields":{
+         "id":1,
+         "name":"Suicidio"
+      }
+   },
+   {
+      "model":"core.typeviolentdeaths",
+      "fields":{
+         "id":2,
+         "name":"Muerte acciental"
+      }
+   },
+   {
+      "model":"core.typeviolentdeaths",
+      "fields":{
+         "id":3,
+         "name":"Muerte accidental de transporte"
+      }
+   },
+   {
+      "model":"core.typeviolentdeaths",
+      "fields":{
+         "id":4,
+         "name":"Homicidio"
+      }
+   }
+]
