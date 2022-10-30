@@ -32,4 +32,4 @@ The project will be available at **127.0.0.1:8000**.
 
 ## License
 
-The source code is released under the [MIT License](https://github.com/Prospect121/django_dashboard_chart_js/blob/master/LICENSE).
+The source code is released under the [MIT License](https://github.com/Prospect121/django_dashboard_chart_js/blob/master/LICENSE.md).
