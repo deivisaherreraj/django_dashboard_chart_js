@@ -2,13 +2,13 @@
 def numberDeathsType(data):
     return {
         'title': 'Muertes violentas',
-        'description': 'Cantida de muertes violentas de acuerdo a un tipo determinado.',
+        'description': 'La seguridad en Cartagena ha mantenido las alertas encendidas. A pesar de la pandemia, los casos de muertes violentas en la ciudad muestran una tendencia creciente.',
         'chart': {
             'type': 'bar',
             'data': {
                 'labels': data['labels'],
                 'datasets': [{
-                    'label': 'Type',
+                    'label': 'Cantidad por tipo',
                     'data': data['data'],
                     'backgroundColor': [
                         'rgba(255, 99, 132, 0.2)',
@@ -34,7 +34,8 @@ def numberDeathsType(data):
             'options': {
                 'responsive': True,
                 'title': {'display': True,
-                          'text': 'Type Bar Chart'
+                          'text': 'Cantida de muertes violentas de acuerdo a un tipo determinado.',
+                          'fontSize': 20
                           },
                 'scales': {
                     'yAxes': [{
@@ -57,7 +58,7 @@ def numberDeathsYear(data):
             'data': {
                 'labels': data['labels'],
                 'datasets': [{
-                    'label': 'Type',
+                    'label': 'Cantidad por año',
                     'data': data['data'],
                     'backgroundColor': [
                         'rgba(255, 99, 132, 0.2)',
@@ -83,7 +84,8 @@ def numberDeathsYear(data):
             'options': {
                 'responsive': True,
                 'title': {'display': True,
-                          'text': 'Type Bar Chart'
+                          'text': 'Cantida de muertes violentas por año.',
+                          'fontSize': 20
                           },
                 'scales': {
                     'yAxes': [{

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div id="container" style="width: 100%;">
+  <h3 id="title"></h3>
+  <p id="description"></p>
+  <div id="chart"></div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+<script>
+
+  let div = document.getElementById('chart');
+  const data = {{ lstChart| safe}}
+
+  const h3 = document.getElementById("title")
+  h3.textContent = data[0].title;
+
+  const p = document.getElementById("description");
+  p.textContent = data[0].description;
+
+  for (let i = 0; i < data.length; i++) {
+    const newDiv = document.createElement("div")
+    newDiv.id = "chart-canvas"
+    
+    const canvas = document.createElement("canvas");
+    canvas.id = i
+    let ctx = canvas.getContext("2d");
+    new Chart(ctx, data[i].chart);
+    newDiv.appendChild(canvas);
+    div.appendChild(newDiv);
+  }
+
+</script>
+
+{% endblock %}

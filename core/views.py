@@ -1,7 +1,6 @@
-from django.http import JsonResponse
 from django.shortcuts import render
-from django.db.models import Sum
 from django.db.models import Count
+import json
 
 from core.models import ViolentDeaths
 from core.model_chart.deaths_violent import numberDeathsType, numberDeathsYear
@@ -12,7 +11,7 @@ def home(request):
     return render(request, 'home.html')
 
 
-def population_chart(request):
+def deathsViolent(request):
     lstChart = []
 
     query1 = {
@@ -41,19 +40,5 @@ def population_chart(request):
     lstChart.append(numberDeathsType(query1))
     lstChart.append(numberDeathsYear(query2))
 
-    return JsonResponse({'lstChart': lstChart, })
-
-
-def pie_chart(request):
-    labels = []
-    data = []
-
-    queryset = ViolentDeaths.objects.order_by('-year')[:5]
-    for death in queryset:
-        labels.append(death.type)
-        data.append(death.year)
-
-    return render(request, 'pie_chart.html', {
-        'labels': labels,
-        'data': data,
-    })
+    # return JsonResponse({'lstChart': lstChart, })
+    return render(request, 'graphics.html', {'lstChart': json.dumps(lstChart)})
