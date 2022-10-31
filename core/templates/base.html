@@ -67,6 +67,7 @@
 <body id="body-pd">
   <header class="header" id="header">
     <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+    <h4> 5 Dimensiones de Cartagena Como Vamos del 2021 al 2019</h4>
     <div class="header_img"> <a href="/admin/">
       <img src="https://cdn-icons-png.flaticon.com/512/2206/2206368.png" alt="">
     </a> </div>
@@ -87,33 +88,20 @@
             <i class='bx bxs-radiation nav_icon'></i>
             <span class="nav_name">Muertes violentas</span> 
           </a> 
-          <a href="#" class="nav_link"> 
-            <i class='bx bx-message-square-detail nav_icon'></i> 
-            <span class="nav_name">Messages</span> 
-          </a> 
-          <a href="#" class="nav_link"> 
-            <i class='bx bx-bookmark nav_icon'></i> 
-            <span class="nav_name">Bookmark</span> 
-          </a> 
-          <a href="#" class="nav_link"> 
-            <i class='bx bx-folder nav_icon'></i> 
-            <span class="nav_name">Files</span> 
+          <a href="{% url 'domestic-violence' %}" class="nav_link"> 
+            <i class='bx bx-male-female nav_icon'></i> 
+            <span class="nav_name">Violencia intrafamiliar</span> 
           </a>
-          <a href="#" class="nav_link"> 
-            <i class='bx bx-bar-chart-alt-2 nav_icon'></i> 
-            <span class="nav_name">Stats</span> 
-          </a> 
         </div>
       </div> 
-      <a href="#" class="nav_link"> 
+      <!--a href="#" class="nav_link"> 
         <i class='bx bx-log-out nav_icon'></i> 
         <span class="nav_name">SignOut</span>
-      </a>
+      </a-->
     </nav>
   </div>
   <!--Container Main start-->
   <div class="height-100 bg-light">
-    <h4> 5 Dimensiones de Cartagena Como vamos del 2021</h4>
     {% block content %}{% endblock %}
   </div>
   <!--Container Main end-->

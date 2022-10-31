@@ -1,13 +1,24 @@
 from django.contrib import admin
 
-from core.models import ViolentDeaths, TypeViolentDeaths
+from core.models import DomesticViolence, Gender, TypeDomesticViolence, ViolentDeaths, TypeViolentDeaths
 
 # Register your models here.
 
-# admin.site.register(ViolentDeaths)
-# admin.site.register(TypeViolentDeaths)
+# GENERO
 
 
+class GenderInline(admin.TabularInline):
+    model = Gender
+
+
+class GenderAdmin(admin.ModelAdmin):
+    list_display = ('name', 'id')
+
+
+admin.site.register(Gender, GenderAdmin)
+
+
+# MUERTES VIOLENTAS
 class TypeViolentDeathsInline(admin.TabularInline):
     model = TypeViolentDeaths
 
@@ -28,3 +39,29 @@ class ViolentDeathsAdmin(admin.ModelAdmin):
 
 
 admin.site.register(ViolentDeaths, ViolentDeathsAdmin)
+
+#--------- FIN MUERTE VIOLENCIA ------------#
+
+# VIOLENCIA INTRAFAMILIAR
+
+
+class TypeDomesticViolenceInline(admin.TabularInline):
+    model = TypeDomesticViolence
+
+
+class TypeDomesticViolenceAdmin(admin.ModelAdmin):
+    list_display = ('name', 'id')
+
+
+admin.site.register(TypeDomesticViolence, TypeDomesticViolenceAdmin)
+
+
+class DomesticViolenceInline(admin.TabularInline):
+    model = DomesticViolence
+
+
+class DomesticViolenceAdmin(admin.ModelAdmin):
+    list_display = ('id', 'year', 'type', 'gender')
+
+
+admin.site.register(DomesticViolence, DomesticViolenceAdmin)

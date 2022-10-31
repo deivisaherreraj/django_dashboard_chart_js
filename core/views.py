@@ -1,8 +1,9 @@
+from core.model_chart.domestic_violence import violenceGender2020, violenceGender2021
 from django.shortcuts import render
 from django.db.models import Count
 import json
 
-from core.models import ViolentDeaths
+from core.models import DomesticViolence, ViolentDeaths
 from core.model_chart.deaths_violent import numberDeathsType, numberDeathsYear
 # Create your views here.
 
@@ -40,5 +41,41 @@ def deathsViolent(request):
     lstChart.append(numberDeathsType(query1))
     lstChart.append(numberDeathsYear(query2))
 
-    # return JsonResponse({'lstChart': lstChart, })
+    return render(request, 'graphics.html', {'lstChart': json.dumps(lstChart)})
+
+
+def domesticViolence(request):
+    lstChart = []
+
+    query2020 = {
+        'labels': [],
+        'data': []
+    }
+
+    query2021 = {
+        'labels': [],
+        'data': []
+    }
+
+    queryset2020 = DomesticViolence.objects.filter(year=2020).values('gender__name').annotate(
+        count=Count('gender_id')).order_by('-count')
+
+    queryset2021 = DomesticViolence.objects.filter(year=2021).values('gender__name').annotate(
+        count=Count('gender_id')).order_by('-count')
+
+    print("2020")
+    for entry in queryset2020:
+        print(entry)
+        query2020['labels'].append(entry['gender__name'])
+        query2020['data'].append(entry['count'])
+
+    print("2021")
+    for entry in queryset2021:
+        print(entry)
+        query2021['labels'].append(entry['gender__name'])
+        query2021['data'].append(entry['count'])
+
+    lstChart.append(violenceGender2020(query2020))
+    lstChart.append(violenceGender2021(query2021))
+
     return render(request, 'graphics.html', {'lstChart': json.dumps(lstChart)})

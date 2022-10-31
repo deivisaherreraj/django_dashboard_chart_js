@@ -22,5 +22,6 @@ from django.urls import path
 urlpatterns = [
     path('', views.home, name='home'),
     path('deaths-violent/', views.deathsViolent, name='deaths-violent'),
+    path('domestic-violence/', views.domesticViolence, name='domestic-violence'),
     path('admin/', admin.site.urls),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

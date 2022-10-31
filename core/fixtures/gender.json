@@ -1,0 +1,16 @@
+[
+    {
+       "model":"core.gender",
+       "fields":{
+          "id":1,
+          "name":"Masculino"
+       }
+    },
+    {
+        "model":"core.gender",
+        "fields":{
+           "id":2,
+           "name":"Femenino"
+        }
+     }
+]
