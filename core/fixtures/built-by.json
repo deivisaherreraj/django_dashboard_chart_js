@@ -1,0 +1,16 @@
+[
+    {
+        "model": "core.builtby",
+        "fields": {
+            "id": 1,
+            "name": "Sector publico"
+        }
+    },
+    {
+        "model": "core.builtby",
+        "fields": {
+            "id": 2,
+            "name": "Sector privado"
+        }
+    }
+]

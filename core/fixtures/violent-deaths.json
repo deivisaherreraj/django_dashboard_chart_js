@@ -3,7 +3,7 @@
       "model":"core.violentdeaths",
       "fields":{
          "id":1,
-         "year":"2020",
+         "year":2020,
          "type_id": 1
       }
    },
@@ -11,7 +11,7 @@
       "model":"core.violentdeaths",
       "fields":{
          "id":2,
-         "year":"2020",
+         "year":2020,
          "type_id": 1
       }
    },
@@ -19,7 +19,7 @@
       "model":"core.violentdeaths",
       "fields":{
          "id":3,
-         "year":"2021",
+         "year":2021,
          "type_id": 2
       }
    },
@@ -27,7 +27,7 @@
       "model":"core.violentdeaths",
       "fields":{
          "id":4,
-         "year":"2021",
+         "year":2021,
          "type_id": 2
       }
    },
@@ -35,7 +35,7 @@
       "model":"core.violentdeaths",
       "fields":{
          "id":5,
-         "year":"2021",
+         "year":2021,
          "type_id": 2
       }
    },
@@ -43,7 +43,7 @@
       "model":"core.violentdeaths",
       "fields":{
          "id":6,
-         "year":"2021",
+         "year":2021,
          "type_id": 2
       }
    },
@@ -51,7 +51,7 @@
       "model":"core.violentdeaths",
       "fields":{
          "id":7,
-         "year":"2021",
+         "year":2021,
          "type_id": 2
       }
    },
@@ -59,7 +59,7 @@
       "model":"core.violentdeaths",
       "fields":{
          "id":8,
-         "year":"2021",
+         "year":2021,
          "type_id": 2
       }
    },
@@ -67,7 +67,7 @@
       "model":"core.violentdeaths",
       "fields":{
          "id":9,
-         "year":"2021",
+         "year":2021,
          "type_id": 2
       }
    },
@@ -75,7 +75,7 @@
       "model":"core.violentdeaths",
       "fields":{
          "id":10,
-         "year":"2021",
+         "year":2021,
          "type_id": 2
       }
    },
@@ -83,7 +83,7 @@
       "model":"core.violentdeaths",
       "fields":{
          "id":11,
-         "year":"2021",
+         "year":2021,
          "type_id": 2
       }
    },
@@ -91,7 +91,7 @@
       "model":"core.violentdeaths",
       "fields":{
          "id":12,
-         "year":"2020",
+         "year":2020,
          "type_id": 3
       }
    }

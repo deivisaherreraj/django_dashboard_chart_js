@@ -1,0 +1,263 @@
+[
+    {
+        "model": "core.livingplace",
+        "fields": {
+            "id": 1,
+            "year": 2019,
+            "stratum": 1,
+            "builtby_id": 1
+        }
+    },
+    {
+        "model": "core.livingplace",
+        "fields": {
+            "id": 2,
+            "year": 2019,
+            "stratum": 1,
+            "builtby_id": 1
+        }
+    },
+    {
+        "model": "core.livingplace",
+        "fields": {
+            "id": 3,
+            "year": 2019,
+            "stratum": 1,
+            "builtby_id": 1
+        }
+    },
+    {
+        "model": "core.livingplace",
+        "fields": {
+            "id": 4,
+            "year": 2019,
+            "stratum": 1,
+            "builtby_id": 1
+        }
+    },
+    {
+        "model": "core.livingplace",
+        "fields": {
+            "id": 5,
+            "year": 2019,
+            "stratum": 1,
+            "builtby_id": 1
+        }
+    },
+    {
+        "model": "core.livingplace",
+        "fields": {
+            "id": 6,
+            "year": 2019,
+            "stratum": 1,
+            "builtby_id": 1
+        }
+    },
+    {
+        "model": "core.livingplace",
+        "fields": {
+            "id": 7,
+            "year": 2019,
+            "stratum": 3,
+            "builtby_id": 1
+        }
+    },
+    {
+        "model": "core.livingplace",
+        "fields": {
+            "id": 8,
+            "year": 2019,
+            "stratum": 3,
+            "builtby_id": 1
+        }
+    },
+    {
+        "model": "core.livingplace",
+        "fields": {
+            "id": 9,
+            "year": 2019,
+            "stratum": 3,
+            "builtby_id": 1
+        }
+    },
+    {
+        "model": "core.livingplace",
+        "fields": {
+            "id": 10,
+            "year": 2019,
+            "stratum": 2,
+            "builtby_id": 1
+        }
+    },
+    {
+        "model": "core.livingplace",
+        "fields": {
+            "id": 11,
+            "year": 2019,
+            "stratum": 2,
+            "builtby_id": 1
+        }
+    },
+    {
+        "model": "core.livingplace",
+        "fields": {
+            "id": 12,
+            "year": 2019,
+            "stratum": 2,
+            "builtby_id": 1
+        }
+    },
+    {
+        "model": "core.livingplace",
+        "fields": {
+            "id": 13,
+            "year": 2019,
+            "stratum": 2,
+            "builtby_id": 1
+        }
+    },
+    {
+        "model": "core.livingplace",
+        "fields": {
+            "id": 14,
+            "year": 2019,
+            "stratum": 3,
+            "builtby_id": 1
+        }
+    },
+    {
+        "model": "core.livingplace",
+        "fields": {
+            "id": 15,
+            "year": 2019,
+            "stratum": 3,
+            "builtby_id": 2
+        }
+    },
+    {
+        "model": "core.livingplace",
+        "fields": {
+            "id": 16,
+            "year": 2019,
+            "stratum": 3,
+            "builtby_id": 2
+        }
+    },
+    {
+        "model": "core.livingplace",
+        "fields": {
+            "id": 17,
+            "year": 2019,
+            "stratum": 3,
+            "builtby_id": 2
+        }
+    },
+    {
+        "model": "core.livingplace",
+        "fields": {
+            "id": 18,
+            "year": 2019,
+            "stratum": 3,
+            "builtby_id": 2
+        }
+    },
+    {
+        "model": "core.livingplace",
+        "fields": {
+            "id": 19,
+            "year": 2019,
+            "stratum": 4,
+            "builtby_id": 2
+        }
+    },
+    {
+        "model": "core.livingplace",
+        "fields": {
+            "id": 20,
+            "year": 2019,
+            "stratum": 4,
+            "builtby_id": 2
+        }
+    },
+    {
+        "model": "core.livingplace",
+        "fields": {
+            "id": 21,
+            "year": 2019,
+            "stratum": 5,
+            "builtby_id": 2
+        }
+    },
+    {
+        "model": "core.livingplace",
+        "fields": {
+            "id": 22,
+            "year": 2019,
+            "stratum": 4,
+            "builtby_id": 2
+        }
+    },
+    {
+        "model": "core.livingplace",
+        "fields": {
+            "id": 23,
+            "year": 2019,
+            "stratum": 4,
+            "builtby_id": 2
+        }
+    },
+    {
+        "model": "core.livingplace",
+        "fields": {
+            "id": 24,
+            "year": 2019,
+            "stratum": 5,
+            "builtby_id": 2
+        }
+    },
+    {
+        "model": "core.livingplace",
+        "fields": {
+            "id": 25,
+            "year": 2019,
+            "stratum": 5,
+            "builtby_id": 2
+        }
+    },
+    {
+        "model": "core.livingplace",
+        "fields": {
+            "id": 26,
+            "year": 2019,
+            "stratum": 5,
+            "builtby_id": 2
+        }
+    },
+    {
+        "model": "core.livingplace",
+        "fields": {
+            "id": 27,
+            "year": 2019,
+            "stratum": 3,
+            "builtby_id": 2
+        }
+    },
+    {
+        "model": "core.livingplace",
+        "fields": {
+            "id": 28,
+            "year": 2019,
+            "stratum": 5,
+            "builtby_id": 2
+        }
+    },
+    {
+        "model": "core.livingplace",
+        "fields": {
+            "id": 29,
+            "year": 2019,
+            "stratum": 5,
+            "builtby_id": 2
+        }
+    }
+]

@@ -1,0 +1,23 @@
+[
+    {
+        "model": "core.stateinfrastructure",
+        "fields": {
+            "id": 1,
+            "name": "Bueno"
+        }
+    },
+    {
+        "model": "core.stateinfrastructure",
+        "fields": {
+            "id": 2,
+            "name": "Regular"
+        }
+    },
+    {
+        "model": "core.stateinfrastructure",
+        "fields": {
+            "id": 3,
+            "name": "Malo"
+        }
+    }
+]

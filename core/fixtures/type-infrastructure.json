@@ -1,0 +1,30 @@
+[
+    {
+        "model": "core.typeinfrastructure",
+        "fields": {
+            "id": 1,
+            "name": "Rígido"
+        }
+    },
+    {
+        "model": "core.typeinfrastructure",
+        "fields": {
+            "id": 2,
+            "name": "Flexible"
+        }
+    },
+    {
+        "model": "core.typeinfrastructure",
+        "fields": {
+            "id": 3,
+            "name": "Afirmado"
+        }
+    },
+    {
+        "model": "core.typeinfrastructure",
+        "fields": {
+            "id": 4,
+            "name": "Adoquín"
+        }
+    }
+]

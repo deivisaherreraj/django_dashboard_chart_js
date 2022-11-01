@@ -23,5 +23,9 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('deaths-violent/', views.deathsViolent, name='deaths-violent'),
     path('domestic-violence/', views.domesticViolence, name='domestic-violence'),
+    path('living/', views.living, name='living'),
+    path('infrastructure-road/', views.infrastructureR,
+         name='infrastructure-road'),
+    path('vehicle/', views.vehicle, name='vehicle'),
     path('admin/', admin.site.urls),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

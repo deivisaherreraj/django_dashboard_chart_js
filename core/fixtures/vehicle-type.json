@@ -1,0 +1,23 @@
+[
+    {
+       "model":"core.vehicletype",
+       "fields":{
+          "id":1,
+          "name":"Automovil"
+       }
+    },
+    {
+        "model":"core.vehicletype",
+        "fields":{
+           "id":2,
+           "name":"Motocicleta"
+        }
+     },
+     {
+        "model":"core.vehicletype",
+        "fields":{
+           "id":3,
+           "name":"Otros"
+        }
+     }
+]

@@ -18,7 +18,7 @@ python manage.py migrate
 Load the data from fixtures:
 
 ```bash
-python manage.py loaddata type-violent-deaths.json violent-deaths.json gender.json type-domestic-violence.json domestic-violence.json
+python manage.py loaddata type-violent-deaths.json violent-deaths.json gender.json type-domestic-violence.json domestic-violence.json built-by.json living-place.json type-infrastructure.json state-infrastructure.json infrastructure-road.json vehicle-type.json vehicle.json
 ```
 
 Finally, run the development server:

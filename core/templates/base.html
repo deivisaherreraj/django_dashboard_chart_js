@@ -48,7 +48,6 @@
           this.classList.add('active')
         }
       }
-      console.log(window.location.pathname)
       let pathname = window.location.pathname;
       linkColor.forEach(l => {
         l.addEventListener('click', colorLink)
@@ -91,6 +90,18 @@
           <a href="{% url 'domestic-violence' %}" class="nav_link"> 
             <i class='bx bx-male-female nav_icon'></i> 
             <span class="nav_name">Violencia intrafamiliar</span> 
+          </a>
+          <a href="{% url 'living' %}" class="nav_link"> 
+            <i class='bx bx-building-house nav_icon'></i> 
+            <span class="nav_name">Viviendas</span> 
+          </a>
+          <a href="{% url 'infrastructure-road' %}" class="nav_link"> 
+            <i class='bx bx-trip nav_icon'></i> 
+            <span class="nav_name">Viviendas</span> 
+          </a>
+          <a href="{% url 'vehicle' %}" class="nav_link"> 
+            <i class='bx bx-car nav_icon'></i> 
+            <span class="nav_name">Viviendas</span> 
           </a>
         </div>
       </div> 
