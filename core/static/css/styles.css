@@ -208,3 +208,7 @@ div#chart-canvas {
     width: 80%;
     margin-bottom: 4rem;
 }
+
+li {
+    list-style: none;
+}

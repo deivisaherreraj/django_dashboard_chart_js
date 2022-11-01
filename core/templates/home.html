@@ -3,7 +3,7 @@
 {% block content %}
 
   <div id="container">
-    <div class="row d-flex justify-content-around">
+    <div class="row d-flex justify-content-around" style="max-height: 76vh; overflow-y: scroll;">
       <div class="card mb-3 col-sm-6" style="max-width: 540px;">
         <div class="row g-0">
           <div class="col-md-4">
@@ -14,7 +14,7 @@
             <div class="card-body">
               <h5 class="card-title">Muertes violentas</h5>
               <p class="card-text">La seguridad en Cartagena ha mantenido las alertas encendidas. A pesar de la pandemia, los casos de muertes violentas en la ciudad muestran una tendencia creciente.</p>
-              <a href="{% url 'deaths-violent' %}" class="btn btn-primary">Graficas</a>
+              <a href="{% url 'deaths-violent' %}" style="background-color: #278d9a;" class="btn btn-primary">Graficas</a>
             </div>
           </div>
         </div>
@@ -30,7 +30,7 @@
             <div class="card-body">
               <h5 class="card-title">Volencia Domestica</h5>
               <p class="card-text">La violencia intrafamiliar va en aumento y según los resultados, las mujeres son las más afectadas.</p>
-              <a href="{% url 'domestic-violence' %}" class="btn btn-primary">Graficas</a>
+              <a href="{% url 'domestic-violence' %}" style="background-color: #278d9a;" class="btn btn-primary">Graficas</a>
             </div>
           </div>
         </div>
@@ -46,7 +46,7 @@
             <div class="card-body">
               <h5 class="card-title">Viviendas</h5>
               <p class="card-text">Viviendas contruidos por sectores publicos y privados en un determinado estrato.</p>
-              <a href="{% url 'living' %}" class="btn btn-primary">Graficas</a>
+              <a href="{% url 'living' %}" style="background-color: #278d9a;" class="btn btn-primary">Graficas</a>
             </div>
           </div>
         </div>
@@ -63,7 +63,7 @@
               <h5 class="card-title">Infraestructura vial
               </h5>
               <p class="card-text">La infraestrucutura vial de Cartagena no crece desde el año 2012.</p>
-              <a href="{% url 'infrastructure-road' %}" class="btn btn-primary">Graficas</a>
+              <a href="{% url 'infrastructure-road' %}" style="background-color: #278d9a;" class="btn btn-primary">Graficas</a>
             </div>
           </div>
         </div>
@@ -79,7 +79,7 @@
             <div class="card-body">
               <h5 class="card-title">Movilidad</h5>
               <p class="card-text">La matricula de vehiculo venia de baja desde el 2019 y la pandemia la complico.</p>
-              <a href="{% url 'vehicle' %}"class="btn btn-primary">Graficas</a>
+              <a href="{% url 'vehicle' %}"  style="background-color: #278d9a;" class="btn btn-primary">Graficas</a>
             </div>
           </div>
         </div>
